@@ -6,7 +6,7 @@
 #    By: 42robotics <marvin@42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/31 10:10:13 by 42robotic         #+#    #+#              #
-#    Updated: 2018/05/31 10:54:17 by 42robotic        ###   ########.fr        #
+#    Updated: 2018/05/31 11:21:00 by 42robotic        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,16 +24,16 @@
 	then i will iterate, hence counting all the digits up to n. 
 '''
 
-def count_of_2(num):
+def count_of_2(n):
 
 	totalcount = 0;
 	i = 2;
 	while i <= n:
 		place = i
 		while place != 0:
-			if place % 10 == 2
+			if int(place % 10) == 2:
 				totalcount += 1
-			place /= 10
+			place = int(place / 10)
 		i = i + 1
 	return (totalcount)
 
